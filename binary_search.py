@@ -32,6 +32,11 @@ def binary_search(list, item):
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 24, 28, 43, 75]
 # Index    0, 1, 2, 3, 4, 5, 6, 7, 8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 => end of the list.
 
+# Binary search rules and some information about efficency of this algorithm
+#
+# Binary seatch will cut the searching grind in half each time, so if our array was 100 elements long the worst case scenartio will look like this:
+# 100 elements => 50 elements => 25 => 13 => 7 => 4 => 2 => 1  // Max seven tries, with simple search worst case scenario it will take a 100 tires!
+#
 
 print(binary_search(my_list, 2)) # This will print 1, remember that the first element has the index of 0, second the index of 1 and so on...
 
